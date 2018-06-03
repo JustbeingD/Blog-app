@@ -1,0 +1,20 @@
+/*i.icon {
+	font-size: 2em;
+}*/
+
+#chevy{
+	font-size: 1.2em;
+	padding-right: 2px;
+}
+.container.main {
+	margin-top: 7.0em;
+}
+
+#delete {
+	display: inline;
+}
+
+footer {
+	background: rgba(0, 0, 0, .87);
+	color: lightgrey;
+}
