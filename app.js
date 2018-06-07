@@ -7,7 +7,10 @@ const 	bodyParser 			= require("body-parser"),
 		app 				= express();
 
 var port = process.env.PORT || 5000;
-mongoose.connect("mongodb://localhost/justbeingd_blog");
+
+// mongoose.connect("mongodb://localhost/justbeingd_blog");
+
+mongoose.connect("mongodb://JustbeingD:g@mes1414@ds151530.mlab.com:51530/blogger")
 app.set("view engine", "ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
