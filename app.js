@@ -6,6 +6,8 @@ const 	bodyParser 			= require("body-parser"),
 		moment				= require("moment"),
 		app 				= express();
 
+var port = process.env.PORT || 5000;
+
 mongoose.connect("mongodb://localhost/justbeingd_blog");
 app.set("view engine", "ejs");
 app.use(express.static("public"));
@@ -103,5 +105,6 @@ app.delete("/blogs/:id", function(req, res){
 	});
 });
 
-app.listen(3000);
-console.log("The server is up on port 3000");
+app.listen(port, function(){
+	console.log("The server is up on port 5000");
+});
